@@ -169,9 +169,6 @@ print("Tempo estimado:", round(tempo, 2), "horas")
 print("\nCoordenada da Base Alpha:",
       pontos_interesse[0]["coordenada"])
 
-
-
-
 print("Posição inicial do mapa:",
       mapa_terreno[0][0])
 
