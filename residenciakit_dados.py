@@ -63,3 +63,4 @@ historico_apollo_superficie = [
     {"missao": "Apollo 16", "horas_superficie": 71.0, "numero_evas": 3, "horas_eva": 20.2},
     {"missao": "Apollo 17", "horas_superficie": 75.0, "numero_evas": 3, "horas_eva": 22.1}
 ]
+
