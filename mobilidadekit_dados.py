@@ -37,6 +37,7 @@ pontos_interesse = [
     {"nome": "Estacao Energia", "coordenada": (8, 16)}
 ]
 
+
 leituras_operacionais = [
     {"ciclo": 1, "veiculo": "RV-02", "bateria_pct": 86, "temp_motor_c": 42, "consumo_pct_km": 4.1},
     {"ciclo": 2, "veiculo": "RV-02", "bateria_pct": 78, "temp_motor_c": 45, "consumo_pct_km": 4.4},
