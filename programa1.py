@@ -3,6 +3,8 @@ from residenciakit_dados import modulos, leituras_ambientais, mapa_base
 
 limites_seguranca = (1000.0, 20.5, 80.0)
 
+# o comando da raw string não quebra o desenho
+
 ARTE_FINAL = r"""
                                  \       |       /          *
              *                     \     |     /
@@ -45,6 +47,7 @@ def classificar_modulo(modulo_id):
     else:
         return f"Módulo seguro para operação (CO2: {ultima_leitura['co2_ppm']} ppm, O2: {ultima_leitura['o2_pct']}%)"
 
+# sum() soma os valores e len() conta a quantidade de elementos, usei porque permitem calcular os totais e a média de forma mais simples
 
 def calcular_indicadores_globais():
     total_capacidade = sum(modulo["capacidade"] for modulo in modulos)
@@ -122,6 +125,7 @@ def executar_diagnostico():
 
     print(ARTE_FINAL)
 
+# o programa não estava executando nada no terminal, então coloquei esse comando para chamar a função quando o arquivo é executado (não entendi muito bem mas foi o que funcionou kk)
 
 if __name__ == "__main__":
     executar_diagnostico()
